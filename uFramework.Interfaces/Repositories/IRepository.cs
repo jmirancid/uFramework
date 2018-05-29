@@ -10,7 +10,7 @@ namespace uFramework.Interfaces.Repositories
         void Update(TEntity entity);
         void Delete(TEntity entity);
 
-        TEntity Get(int id);
+        TEntity Get(object id);
         TEntity GetBy(System.Linq.Expressions.Expression<Func<TEntity, bool>> predicate);
 
         IQueryable<TEntity> All();

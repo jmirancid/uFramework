@@ -29,7 +29,7 @@ namespace uFramework.Cache.Business
             this.Repository.Value.Delete(entity);
         }
 
-        public virtual TEntry Get(int id)
+        public virtual TEntry Get(object id)
         {
             return this.Repository.Value.Get(id);
         }

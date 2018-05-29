@@ -42,7 +42,7 @@ namespace uFramework.Cache.Repositories
             Context.Remove(entity.Key);
         }
     
-        public virtual TEntry Get(int id)
+        public virtual TEntry Get(object id)
         {
             throw new NotImplementedException();
         }

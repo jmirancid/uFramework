@@ -32,7 +32,7 @@ namespace uFramework.Business.Definitions
             this.Repository.Value.Delete(entity);
         }
 
-        public virtual TEntity Get(int id)
+        public virtual TEntity Get(object id)
         {
             return this.Repository.Value.Get(id);
         }

@@ -66,7 +66,7 @@ namespace uFramework.Repositories.Dapper.Definitions
             }
         }
 
-        public virtual TEntity Get(int id)
+        public virtual TEntity Get(object id)
         {
             try
             {

@@ -78,10 +78,10 @@ namespace uFramework.Repositories.EF.Definitions
 			}
 		}
 
-		public virtual TEntity Get(int id)
+		public virtual TEntity Get(object id)
 		{
 			var entity = new TEntity();
-			(entity as BaseEntity).Id = id;
+			(entity as Entity).Id = id;
 
 			EntityKey key = 
 				Context.CreateEntityKey(Context.CreateObjectSet<TEntity>().EntitySet.Name, entity);
